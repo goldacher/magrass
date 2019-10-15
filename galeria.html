@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/customizado.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="z-depth-0 green">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Magrass</a>
+        <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="servico.html">Emagrecimento Saudável</a></li>
+          <li><a href="depoimento.html">Depoimentos de Clientes</a></li>
+          <li><a href="imc.html">Veja o seu IMC</a></li>
+          <li><a href="sobre.html">Sobre a Magras</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <section>
+      <h3 style="text-align: center; color: green">Alguns de Nossos Trabalhos...</h3>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://oniquenutrition.com/blog/wp-content/uploads/2019/01/emagrecimento-saudavel.jpg">
+          </li>
+          <li>
+            <img
+              src="https://i0.wp.com/www.pronadar.com.br/wp-content/uploads/2017/08/Emagrecer-do-in%C3%ADco-ao-fim-2017-08-03.jpg?fit=650%2C400">
+          </li>
+          <li>
+            <img
+              src="https://i1.wp.com/www.conectandooser.com.br/site/wp-content/uploads/2016/10/ansiedade-emagrecer-regime-dieta2.jpg?resize=678%2C381&ssl=1">
+          </li>
+          <li>
+            <img
+              src="https://www.psicologosberrini.com.br/wp-content/uploads/psicologo-e-emagrecimento-2-1024x768.jpg">
+          </li>
+          <li>
+            <img src="http://www.clinicaeden.com/wp-content/uploads/2017/09/EMAGRECER_NUTROHEALTH.jpg">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+
+  <footer class="page-footer green">
+    <div class="footer-copyright">
+        <div class="container">
+            <a class="grey-text text-lighten-4 left" href="contato.html">Avenida do Estado, 361, Praia dos Amores
+                Balneário Camboriú - SC CEP: 88331-490<br> Copyright © 2018 Magrass</a>
+        </div>
+    </div>
+</footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+  <script>$(document).ready(function () {
+      $('.slider').slider();
+    })
+  </script>
+</body>
+
+</html>
