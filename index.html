@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/customizado.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="z-depth-0 green">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Magrass</a>
+                <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servico.html">Emagrecimento Saudável</a></li>
+                    <li><a href="depoimento.html">Depoimentos de Clientes</a></li>
+                    <li><a href="imc.html">Veja o seu IMC</a></li>
+                    <li><a href="sobre.html">Sobre a Magras</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="imagens/emagrecersaude.jpg"></div><br>
+        <div class="right-align">
+            <h3 style="color: green;">Nossos<br><b style="color: green;">Tratamentos</b></h3>
+            <b style="color: green;">Dentre os principais serviços oferecidos, os<br>de maior sucesso são aqueles
+                voltados para <br> tratamento estético da rede Emagrecentro.</b>
+        </div>
+    </div>
+
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="imagens/tratamentofacial_Easy-Resize.com.jpg">
+                <div class="caption left-align">
+                    <h3 style="color: rgb(1, 107, 1);"><b>Tratamento Facial</b></h3>
+                    <h5 style="color: rgb(1, 107, 1);">Ideal para quem quer controlar e prevenir a acne.<br>Este
+                        tratamento une um método exclusivo que<br>garante uma pele mais bonita e saudável.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="imagens/tratamentoflacidez_Easy-Resize.com.jpg">
+                <div class="caption right-align">
+                    <h3 style="color: rgb(1, 107, 1);"><b>Tratametno Flacidez</b></h3>
+                    <h5 style="color: rgb(1, 107, 1);">O tratamento Ultra Firmador induz a produção<br>de colágeno para
+                        combater a flacidez.<br>O resultado é uma pele mais firme e lisa.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="imagens/tratamentomanchas_Easy-Resize.com.jpg">
+                <div class="caption left-align">
+                    <h3 style="color: rgb(1, 107, 1);"><b>Peeling Clareador</b></h3>
+                    <h5 style="color: rgb(1, 107, 1);">Este é um tratamento que devolverá à sua pele<br> a tonalidade e
+                        textura, proporcionando um<br>aspecto mais jovem e saudável ao seu rosto.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="imagens/clinica.png"></div><br><br><br>
+        <div class="center-align">
+            <h1 style="display: block; color: rgb(14, 167, 14);">VIVA UM PLANO MAGRASS</h1>
+        </div>
+    </div>
+
+    <footer class="page-footer green">
+            <div class="footer-copyright">
+                <div class="container">
+                    <a class="grey-text text-lighten-4 left" href="contato.html">Avenida do Estado, 361, Praia dos Amores
+                        Balneário Camboriú - SC CEP: 88331-490<br> Copyright © 2018 Magrass</a>
+                </div>
+            </div>
+        </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+    <script>$(document).ready(function () {
+            $('.slider').slider();
+        })
+    </script>
+</body>
+
+</html>
