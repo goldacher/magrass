@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/customizado.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="z-depth-0 green">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Magrass</a>
+                <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servico.html">Emagrecimento Saudável</a></li>
+                    <li><a href="depoimento.html">Depoimentos de Clientes</a></li>
+                    <li><a href="imc.html">Veja o seu IMC</a></li>
+                    <li><a href="sobre.html">Sobre a Magras</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <section>
+            <div class="container">
+                <form name="calc" onsubmit="calcular();return false;">
+                    <label for="Peso">Peso</label>
+                    <input placeholder="Peso em Kg" id="Peso" type="text" class="validate" required />
+
+                    <label for="Altura">Altura</label>
+                    <input id="Altura" placeholder="Altura em cm" type="text" class="validate" required />
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
+                    
+                </form>
+                <br>
+                <h2>
+                    <div id="Resultado"></div>
+                </h2>
+            </div>
+        </section>
+    </article>
+    <footer class="page-footer green">
+        <div class="footer-copyright">
+            <div class="container">
+                <a class="grey-text text-lighten-4 left" href="contato.html">Avenida do Estado, 361, Praia dos Amores
+                    Balneário Camboriú - SC CEP: 88331-490<br> Copyright © 2018 Magrass</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calcular() {
+            var Peso = document.calc.Peso.value;
+            var Altura = document.calc.Altura.value;
+            result = Peso / (Altura * 2 / 100);
+            result = result.toFixed(2);
+            return document.getElementById("Resultado").innerHTML = result
+        }
+    </script>
+</body>
+
+</html>
